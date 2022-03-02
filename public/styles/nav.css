@@ -1,0 +1,29 @@
+.nav-container {
+  height: 120px;
+  width: 100%;
+  background-color: #4056a1;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+}
+
+#tweeter-titile {
+  font-family: bungee;
+  padding-left: 1.5em;
+  align-self: center;
+}
+
+.message-container {
+  padding-right: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+#arrow {
+  align-self: center;
+}

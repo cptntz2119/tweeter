@@ -6,12 +6,30 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
+    
+    <!-- add font Bungee -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&
+    display=swap" rel="stylesheet">
+
+    <!-- add font awesone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" type="text/css">
+    
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/all-tweets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
@@ -19,11 +37,39 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
+    <nav class = "nav-container">
+      <span id = "tweeter-titile">tweeter</span>
+      <div class = "message-container">
+        <span id = "write-message">Write a new tweet</span>
+        <i class="fa-solid fa-angles-down" id="arrow"></i>
+      </div>
     </nav>
+    
+    <header class = "header-container">
+      <div id = "avatar">
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2 id = "avatat-name">Your Name</h2>
+      </div>
+    </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet-container">
+        <!--<h2>Compose Tweet</h2> -->
+        <form class="form-container">
+          <label id = "text-label" for="tweet-text">What are you humming about?</label>
+          <textarea id="tweet-text" cols="5" rows="1" name="text"></textarea>
+          <footer class="button-counter-container">
+            <button id="button" type="submit">Tweet</button>
+            <output name="counter" id="counter" for="tweet-text">140</output>
+          </footer>
+        </form>
+      </section>
+      <section class="tweet-container"></section>
+    </main>
+    <script src="/scripts/composer-char-counter.js"></script>
   </body>
 </html>

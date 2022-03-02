@@ -1,0 +1,19 @@
+.container {
+  height: 120px;
+  background-color: #f4f1ec;
+  color: rgb(1, 1, 22);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.new-tweet-container {
+  position: relative;
+  align-items: center;
+}
+
+.tweet-container {
+  position: relative;
+  margin-top: 10px;
+}
