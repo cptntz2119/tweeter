@@ -16,6 +16,8 @@
     <!-- add font awesone-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" type="text/css">
     
+    <!-- add timeago-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -59,7 +61,8 @@
     <main class="container">
       <section class="new-tweet-container">
         <!--<h2>Compose Tweet</h2> -->
-        <form class="form-container">
+        <div id="error-message"></div>
+        <form class="form-container" id="tweet-form">
           <label id = "text-label" for="tweet-text">What are you humming about?</label>
           <textarea id="tweet-text" cols="5" rows="1" name="text"></textarea>
           <footer class="button-counter-container">

@@ -2,6 +2,7 @@
   border: 3px solid;
   border-color: rgb(1, 1, 22);
   margin-top: 5px;
+  margin-bottom: 5px;
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
@@ -11,6 +12,7 @@
 .newest-tweet {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 
 .tweet-header {
@@ -46,6 +48,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-bottom: solid 2px;
+  margin-bottom: 5px;
 }
 #tweet-dates {
   margin-left: 10px;
