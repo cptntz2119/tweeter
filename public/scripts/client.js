@@ -15,8 +15,10 @@ $(document).ready(function () {
     return `
           <article class = "newest-tweet">
             <header class="tweet-header">
-              <img  id ="user-avatar" src=${tweetData.user.avatars}> 
-              <div id="user-name">${tweetData.user.name}</div>
+              <div class="ava-name-container">
+                <img id ="user-avatar" src=${tweetData.user.avatars}> 
+                <div id="user-name">${tweetData.user.name}</div>
+              </div> 
               <div id ="user-handle">${tweetData.user.handle}</div>
             </header>
             <p id="tweet-content">${escape(tweetData.content.text)}</p>

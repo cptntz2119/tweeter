@@ -16,22 +16,34 @@
 }
 
 .tweet-header {
+  margin-left: 5px;
+  margin-right: 5px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #user-avatar {
+  align-self: center;
   margin-left: 20px;
   margin-top: 20px;
 }
+
+.ava-name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
 #user-name {
+  align-self: center;
   margin-top: 20px;
   margin-left: 5%;
 }
 #user-handle {
+  align-self: center;
   margin-top: 20px;
-  margin-left: 50%;
-  margin-right: 20px;
+  float: right;
 }
 
 #tweet-content {
