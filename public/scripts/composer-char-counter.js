@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  // --- our code goes here ---
   //when the input has keyup event, we use callback to count
   $("#tweet-text").keyup(function () {
     eventLength = $(this);
