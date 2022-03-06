@@ -61,7 +61,6 @@ $(document).ready(function () {
   $("#tweet-form").on("submit", function (event) {
     event.preventDefault();
     const tweet = $("#tweet-text").val();
-
     if (tweet === "") {
       $("#error-message").show();
       $("#error-message").text("Your tweet is empty!");
@@ -79,6 +78,7 @@ $(document).ready(function () {
         $("#error-message").hide();
         loadTweets();
         $("#tweet-text").val("").focus(); //clear input data in textarea
+        $("#counter").text(140);
       });
     }
   });

@@ -1,6 +1,7 @@
 .tweet-container {
   border: 3px solid;
   border-color: rgb(1, 1, 22);
+  border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 5%;
@@ -9,10 +10,13 @@
   flex-direction: column;
   position: relative;
 }
+
 .newest-tweet {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
   margin-bottom: 10px;
+  border-top: 5px;
 }
 
 .tweet-header {
@@ -35,11 +39,13 @@
   align-items: center;
   width: 100%;
 }
+
 #user-name {
   align-self: center;
   margin-top: 20px;
   margin-left: 5%;
 }
+
 #user-handle {
   align-self: center;
   margin-top: 20px;
@@ -54,6 +60,7 @@
   outline: none;
   border-bottom: 3px solid;
   border-color: black;
+  overflow-wrap: break-word;
 }
 
 .tweet-footer {
@@ -61,12 +68,14 @@
   flex-direction: row;
   justify-content: space-between;
   border-bottom: solid 2px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
+
 #tweet-dates {
   margin-left: 10px;
   margin-bottom: 20px;
 }
+
 .user-icons {
   margin-right: 20px;
   margin-bottom: 20px;
@@ -80,9 +89,11 @@
 .fa-retweet:hover {
   color: red;
 }
+
 .fa-heart:hover {
   color: red;
 }
+
 .fa-flag:hover {
   color: red;
 }
